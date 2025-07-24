@@ -4,7 +4,7 @@ import numpy as np
 cap = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-# effects = [
+effects = [
     # cv2.imread('gifts/2025.png', -1),
     # cv2.imread('gifts/handhearts.png', -1),
     # cv2.imread('gifts/corgi.png', -1),
@@ -46,7 +46,7 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
     # cv2.imread('gifts/cheeryouup.png', -1),
     # cv2.imread('gifts/teambracelet.png', -1),
     ## Add more if you want. Better to separate in a .json file if too many but this is just a demo. Only a few gifts.
-# ]
+]
 
 ## 1. If by default, don't want to show face, use overlay_filter(frame, avatar, x, y, w, h) in 4(b) below
 avatar = cv2.imread('gifts/FaizalZahid.png', -1)
